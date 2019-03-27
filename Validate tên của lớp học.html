@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function CheckNameClass(str) {
+        let RegEx = /^[CAP]{1}[0-9]{4}[G-M]{1}$/;
+        if(RegEx.test(str)){
+            return true;
+        }else{
+            return  false;
+        }
+    }
+    let str1 = "C0318G";
+    let str2 = "M0318G";
+    let str3 = "P0323A";
+    console.log(CheckNameClass(str1));
+    console.log(CheckNameClass(str2));
+    console.log(CheckNameClass(str3));
+
+</script>
+</body>
+</html>
